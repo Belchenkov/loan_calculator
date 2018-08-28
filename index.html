@@ -1,13 +1,111 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Loan Calculator</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div id="calc" class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">
+                        <i class="fa fa-calculator"></i> Loan Calculator
+                    </h1>
+                    <form id="loan-form">
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input
+                                    type="number"
+                                    class="form-control"
+                                    id="amount"
+                                    placeholder="Loan Amount"
+                            >
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">%</span>
+                            </div>
+                            <input
+                                    type="number"
+                                    class="form-control"
+                                    id="interest"
+                                    placeholder="Interest"
+                            >
+                        </div>
+                        <div class="form-group mb-2">
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="years"
+                                placeholder="Years To Repay"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <button
+                                    class="btn btn-info btn-block"
+                                    type="submit">
+                                <i class="fa fa-check-square-o"></i> Calculate
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Loader -->
+                    <!--<div id="loading">
+                        <img src="img/loading.gif" alt="loader">
+                    </div>
+                    -->
+                    <!-- Result -->
+                    <div id="resuls" class="pt-2">
+                        <h5>
+                            <i class="fa fa-university"></i> Results
+                        </h5>
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Monthly Payment</span>
+                        </div>
+                        <input
+                                type="number"
+                                class="form-control"
+                                id="monthly-payment"
+                                disabled
+                        >
+                    </div>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Total Payment</span>
+                        </div>
+                        <input
+                                type="number"
+                                class="form-control"
+                                id="total-payment"
+                                disabled
+                        >
+                    </div>
 
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Total Interest</span>
+                        </div>
+                        <input
+                                type="number"
+                                class="form-control"
+                                id="total-interest"
+                                disabled
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/app.js"></script>
 </body>
 </html>
