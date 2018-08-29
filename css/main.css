@@ -5,3 +5,8 @@
 .fa.fa-calculator {
     color: #9190ff;
 }
+
+#loading,
+#results {
+    display: none;
+}
